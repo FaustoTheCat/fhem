@@ -38,7 +38,7 @@ def api_echo():
         post_fhem('Seq', request.args['Seq'])
     if 'PlugState' in request.args:
         post_fhem('PlugState', request.args['PlugState'])
-    if 'ChrMode' in request.args:
+    if 'ChrgMode' in request.args:
         post_fhem('ChrgMode', request.args['ChrgMode'])
     if 'Wpr' in request.args:
         post_fhem('Wpr', request.args['Wpr'])  
