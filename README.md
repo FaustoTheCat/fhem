@@ -1,2 +1,2 @@
 # fhem
-My hem snipplets
+My fhem snipplets
