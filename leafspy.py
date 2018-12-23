@@ -39,9 +39,13 @@ def api_echo():
     if 'PlugState' in request.args:
         post_fhem('PlugState', request.args['PlugState'])
     if 'ChrMode' in request.args:
-        post_fhem('ChrMode', request.args['ChrMode'])
-    if 'ChrPwr' in request.args:
-        post_fhem('ChrPwr', request.args['ChrPwr'])
+        post_fhem('ChrgMode', request.args['ChrgMode'])
+    if 'Wpr' in request.args:
+        post_fhem('Wpr', request.args['Wpr'])  
+    if 'VIN' in request.args:
+        post_fhem('VIN', request.args['VIN'])
+    if 'ChrgPwr' in request.args:
+        post_fhem('ChrgPwr', request.args['ChrgPwr'])
     if 'DevBat' in request.args:
         post_fhem('SmartphoneSOC', request.args['DevBat'])
     return ""
