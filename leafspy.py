@@ -36,6 +36,12 @@ def post_fhem(key, value):
         page = response.read()
         return page
 
+@app.route('/')
+def index():
+     return render_template('index.html')
+    # return 'Index Page'
+	
+
 @app.route('/app', methods = ['GET', 'POST'])
 def api_echo():
     if 'SOC' in request.args:
