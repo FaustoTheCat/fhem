@@ -37,9 +37,8 @@ def post_fhem(key, value):
         return page
 
 @app.route('/')
-def index():
-     return render_template('index.html')
-    # return 'Index Page'
+def hello_world():
+    return 'it works!'
 	
 
 @app.route('/app', methods = ['GET', 'POST'])
