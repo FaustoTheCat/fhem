@@ -1,4 +1,4 @@
-{ sprintf("SOC=%d%% Gids=%d, Temp=%d°C, Position=%f %f, Elev=%.2f, Trip=%d, Odo=%d km, \n Seq=%d, PlugState=%s, Wiper=%s, BatTemp=%f C, DevBat=%d %,ChrgMode=%s, ChrgPwr=%f, VIN=%s " , 
+{ sprintf("SOC=%d%% Gids=%d, Temp=%2.1f°C, Position=%f %f, Elev=%.2f, Trip=%d, Odo=%d km, \n Seq=%d, PlugState=%s, Wiper=%s, BatTemp=%f C, DevBat=%d %,ChrgMode=%s, ChrgPwr=%f, VIN=%s " , 
 ReadingsNum("Leaf", "BatterySOC", 0), 
 ReadingsNum("Leaf", "BatteryGids", 0), 
 ((ReadingsNum("Leaf", "AmbientTemp", 0) - 32) * 5 / 9),
